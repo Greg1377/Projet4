@@ -44,7 +44,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 33px 50px;
 }
 
 .bloc-md {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 28px 50px;
 }
 
 .bg-center,
@@ -283,7 +283,7 @@ img.center-block.image-resize-mode.logo {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .navbar {
@@ -511,6 +511,14 @@ button {
     box-shadow: none;
 }
 
+.footer-contact {
+    display: flex;
+    place-content: space-between flex-end;
+    justify-items: center;
+    margin: 2% -37% 0% 0%;
+    line-height: 29px;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -655,6 +663,32 @@ a {
     color: #575757!important;
 }
 
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+span {
+    display: none;
+    color: red;
+}
+
+input:focus:invalid+span {
+    display: block;
+    border-color: #ff000f;
+}
+
+input:focus:invalid {
+    border-color: #ff000f;
+}
+
+input:focus:valid {
+    border-color: #56c93f;
+    background-image: none;
+}
+
 .container {
     max-width: 1000px;
 }
@@ -678,7 +712,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 p.evidence {
@@ -856,13 +890,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -880,10 +914,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -892,8 +922,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -912,6 +940,13 @@ h4 {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+    .footer-contact {
+        display: flex;
+        place-content: space-between flex-end;
+        justify-items: center;
+        margin: 12px 6% 68px 0px;
+        line-height: 29px;
     }
     .b-parallax {
         background-attachment: scroll;
